@@ -1,31 +1,208 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.3.32901.215
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Repaso - Ejercicios no.3 - C++", "Repaso - Ejercicios no.3 - C++\Repaso - Ejercicios no.3 - C++.vcxproj", "{88F35573-97E9-4B0C-9616-2DD1DFA9F064}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{88F35573-97E9-4B0C-9616-2DD1DFA9F064}.Debug|x64.ActiveCfg = Debug|x64
-		{88F35573-97E9-4B0C-9616-2DD1DFA9F064}.Debug|x64.Build.0 = Debug|x64
-		{88F35573-97E9-4B0C-9616-2DD1DFA9F064}.Debug|x86.ActiveCfg = Debug|Win32
-		{88F35573-97E9-4B0C-9616-2DD1DFA9F064}.Debug|x86.Build.0 = Debug|Win32
-		{88F35573-97E9-4B0C-9616-2DD1DFA9F064}.Release|x64.ActiveCfg = Release|x64
-		{88F35573-97E9-4B0C-9616-2DD1DFA9F064}.Release|x64.Build.0 = Release|x64
-		{88F35573-97E9-4B0C-9616-2DD1DFA9F064}.Release|x86.ActiveCfg = Release|Win32
-		{88F35573-97E9-4B0C-9616-2DD1DFA9F064}.Release|x86.Build.0 = Release|Win32
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EE9CB0DF-3B33-4A68-AB4E-167CDC3E15F0}
-	EndGlobalSection
-EndGlobal
+//Melany Estefania Rosa Gonzalez 0909-22-2253 
+#include <iostream> 
+
+using namespace std;
+
+int main() {
+	/*	CONDICIONALES (IF - ELSE IF)
+				PROGRAMA 1
+	int edad = 0;
+	cout << "Digite su edad en numeros: "; cin >> edad;
+
+	if (edad>=18) {
+		cout << "\nUsted es mayor de edad." << endl;
+	} else{
+		cout << "\nUsted es menor de edad." << endl;
+		return 0;
+	}
+				PROGRAMA 2
+	int a, b;
+	cout << "Digite un numero: "; cin >> a;
+	cout << "Digite otro numero: "; cin >> b;
+
+	if (a>b) {
+		cout << a << " es mayor que " << b;
+	}
+	else if (b > a) {
+		cout << b << " es mayor que " << a;
+	}
+	else {
+		cout << a << " es igual a " << b;
+		return 0;
+	}
+				PROGRAMA 3
+	int n;
+	cout << "Digite un numero entero: "; cin >> n;
+	if (n % 2==0) {
+		cout << "\n" << n << " es par."<<endl;
+	}
+	else if (n%2 !=0) {
+		cout << "\n" << n << " es impar."<<endl;
+		return 0;
+	} 
+
+		ESTRUCTURAS ITERATIVAS (FOR - WHILE)
+				PROGRAMA 1
+	
+	int n,f=1,d=1; //declaración de variables 
+					//incializa en 1 porque se multiplica cada número natural desde 1
+
+	cout << "Digite un numero: "; cin >> n; //petición de número a usuario
+
+	while (d<=n) { //mientras dato sea menor o igual a número
+		f *= d; //multiplica valor factorial por valor dato 
+		d++; //incrementa en uno hasta alcanzar valor numero
+	}
+
+	cout << "El factorial de el numero " << n << " es: " << f << endl; //resultado
+
+	return 0;
+				PROGRAMA 2 y 3
+	
+	int n,d;
+
+	do {
+		cout << "\nDigite un numero mayor que 10 y menor que 30: "; cin >> n;
+	} while (n <= 10 || n > 30); {
+		cout << "\nNumeros impares desde 1 hasta el numero " << n << ":" << endl;
+
+	}
+	for (d = 1; d <= n; d++) {
+		if (d % 2 != 0) {
+			cout <<"\n" << d << endl;
+		}
+	}
+	return 0; 
+		ESTRUCTURAS DE SELECCCION (SWITCH)
+				PROGRAMA 1
+	int n=1;
+
+	cout << "Digite un numero del 1 al 5: "; cin >> n;
+	
+	switch (n) {
+	case 1: 
+		cout << "\nLunes" << endl;
+		break;
+	case 2:
+		cout << "\nMartes" << endl;
+		break;
+	case 3:
+		cout << "\nMiercoles" << endl;
+		break;
+	case 4:
+		cout << "\nJueves" << endl;
+		break;
+	case 5:
+		cout << "\nViernes" << endl;
+		break;
+	default:
+		cout << "\nDigite unicamente un numero del 1 al 5." << endl;
+	}
+	return 0; 
+	*/
+	/*PROGRAMA 2*/
+	int p;
+
+	cout << "Digite el numero programa que desea ejecutar de 1 a 6: "; cin >> p;
+	switch (p) {
+	case 1: {
+		int edad = 0;
+		cout << "Digite su edad en numeros: "; cin >> edad;
+
+		if (edad >= 18) {
+			cout << "\nUsted es mayor de edad." << endl;
+		}
+		else {
+			cout << "\nUsted es menor de edad." << endl;
+		}
+	}	break;
+	case 2: {
+		int a, b;
+		cout << "Digite un numero: "; cin >> a;
+		cout << "Digite otro numero: "; cin >> b;
+
+		if (a > b) {
+			cout << a << " es mayor que " << b;
+		}
+		else if (b > a) {
+			cout << b << " es mayor que " << a;
+		}
+		else {
+			cout << a << " es igual a " << b;
+			return 0;
+		} }
+		  break;
+	case 3: {
+		int n;
+		cout << "Digite un numero entero: "; cin >> n;
+		if (n % 2 == 0) {
+			cout << "\n" << n << " es par." << endl;
+		}
+		else if (n % 2 != 0) {
+			cout << "\n" << n << " es impar." << endl;
+			return 0;
+		}
+	}
+		  break;
+	case 4: {
+		int n, f = 1, d = 1;
+
+		cout << "Digite un numero: "; cin >> n;
+
+		while (d <= n) {
+			f *= d;
+			d++;
+		}
+		cout << "El factorial de el numero " << n << " es: " << f << endl;
+		return 0;
+	}
+		  break;
+	case 5: { //Dos en uno
+		int n, d;
+
+		do {
+			cout << "\nDigite un numero mayor que 10 y menor que 30: "; cin >> n;
+		} while (n <= 10 || n > 30); {
+			cout << "\nNumeros impares desde 1 hasta el numero " << n << ":" << endl;
+		}
+		for (d = 1; d <= n; d++) {
+			if (d % 2 != 0) {
+				cout << "\n" << d << endl;
+			}
+		}
+		return 0;
+	}
+		  break;
+	case 6: {
+		int n = 1;
+
+		cout << "Digite un numero del 1 al 5: "; cin >> n;
+
+		switch (n) {
+		case 1:
+			cout << "\nLunes" << endl;
+			break;
+		case 2:
+			cout << "\nMartes" << endl;
+			break;
+		case 3:
+			cout << "\nMiercoles" << endl;
+			break;
+		case 4:
+			cout << "\nJueves" << endl;
+			break;
+		case 5:
+			cout << "\nViernes" << endl;
+			break;
+		default:
+			cout << "\nDigite unicamente un numero del 1 al 5." << endl;
+		}
+		return 0;
+	}
+		  break;
+	default:
+		cout << "\nDigite unicamente un numero del 1 al 7.";
+
+		return 0;
+	}
+}
