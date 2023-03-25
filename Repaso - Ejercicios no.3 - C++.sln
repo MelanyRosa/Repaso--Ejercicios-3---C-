@@ -59,17 +59,18 @@ int main() {
 	return 0;
 				PROGRAMA 2 y 3
 	
-	int n,d;
+	int n,d; //declaracion de variables
 
 	do {
-		cout << "\nDigite un numero mayor que 10 y menor que 30: "; cin >> n;
-	} while (n <= 10 || n > 30); {
-		cout << "\nNumeros impares desde 1 hasta el numero " << n << ":" << endl;
+		cout << "\nDigite un numero mayor que 10 y menor que 30: "; cin >> n; //peticion a usuario
+	} while (n <= 10 || n > 30); {  //condicion
+		cout << "\nNumeros impares desde 1 hasta el numero " << n << ":" << endl; //resultado
 
 	}
-	for (d = 1; d <= n; d++) {
-		if (d % 2 != 0) {
-			cout <<"\n" << d << endl;
+	for (d = 1; d <= n; d++) { //
+		if (d % 2 != 0) { //dentro del bucle se verifica si el numero es impar utilizando (%)
+						// Si el resultado de la division entre dos es diferente a cero significa que es impar
+			cout <<"\n" << d << endl; //se muestra en pantalla
 		}
 	}
 	return 0; 
